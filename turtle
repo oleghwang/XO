@@ -1,0 +1,20 @@
+from turtle import *
+
+def sq(a):
+    for i in range(4):
+        color(colors[i % 4])
+        forward(a)
+        left(90)
+colors = ['red', 'violet', 'green', 'blue']
+speed(100)
+
+
+dlina = 30
+for i in range(60):
+
+    sq(dlina)
+    right(10)
+    dlina = dlina + 4
+
+
+done()
